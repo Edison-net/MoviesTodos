@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.single_movie_details.SingleMovie">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Connection Problem!!"
+            android:visibility="gone"/>
+
+        <ScrollView
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout">
+
+
+                <ImageView
+                    android:id="@+id/iv_movie_poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_gravity="center"
+                    android:scaleType="matrix"
+                    android:src="@drawable/adam_sandler" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="388dp"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:id="@+id/movie_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Very Best of"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:textColor="#FFFFFF" />
+
+                    <ToggleButton
+                        android:text="ToggleButton"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="-30dp"
+                        android:layout_marginLeft="350dp"
+                        android:textOff=""
+                        android:textOn=""
+                        android:id="@+id/toggleButton2"
+                        android:isScrollContainer="true"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="-60dp"
+                        android:layout_marginLeft="315dp"
+                        app:srcCompat="@drawable/ic_launcher_heart_foreground"
+                        android:id="@+id/imageView2"
+                        android:tint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/movie_tagline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-40dp"
+                        android:text="Adam Sandler"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF" />
+
+                    <ImageView
+                        android:layout_width="100"
+                        android:layout_height="100"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/adam_sandler_2"
+                        android:id="@+id/imageView"
+                        android:layout_marginTop="30dp" />
+
+                    <ImageView
+                        android:layout_width="100"
+                        android:layout_height="100"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/adam_sandler_1"
+                        android:id="@+id/imageView"
+                        android:layout_marginTop="30dp" />
+
+                    <TextView
+                        android:layout_width="84dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="115"
+                        android:text="Click"
+                        android:layout_marginTop="-200dp"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="263dp"
+                        android:layout_height="64dp"
+                        android:layout_marginLeft="115"
+                        android:text="Eu os declaro Marido e Larry"
+                        android:layout_marginTop="88dp"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:text="2006 - Comédia"
+                        android:layout_marginTop="50"
+                        android:layout_width="280dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="-150dp"
+                        android:layout_marginLeft="115"
+                        android:id="@+id/textView"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18" />
+
+                    <TextView
+                        android:text="2007 - Comédia"
+                        android:layout_marginTop="50"
+                        android:layout_width="280dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="110dp"
+                        android:layout_marginLeft="115"
+                        android:id="@+id/textView"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="-220dp"
+                        android:layout_marginLeft="345dp"
+                        app:srcCompat="@drawable/ic_launcher_check_foreground"
+                        android:id="@+id/imageView2"
+                        android:tint="#FFFFFF" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginLeft="345dp"
+                        app:srcCompat="@drawable/ic_launcher_check_foreground"
+                        android:id="@+id/imageView2"
+                        android:tint="#FFFFFF" />
+
+                    <TextView
+                        android:text="like"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
